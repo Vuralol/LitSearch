@@ -1,9 +1,15 @@
 import requests
 from urllib.parse import quote
+import json
 
-api_key = 'e06b8d66547acd3743143196a83a2d58'
-scopus_id = '84980079927'
+with open('config.json', 'r') as f:
+  data = json.load(f)
 
+api_key = data['API-Key']
+api_insttoken = data['API-Insttoken']
+
+print(api_key)
+print(api_insttoken)
 api_url = f'https://api.elsevier.com/content/search/scopus'
 # api_url_Textsearch = 'https://api.elsevier.com/content/search/scopus'
 
