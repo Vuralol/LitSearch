@@ -1,6 +1,9 @@
 import requests
 from urllib.parse import quote
 import json
+from elsapy.elssearch import ElsSearch
+
+
 
 with open('config.json', 'r') as f:
   data = json.load(f)
