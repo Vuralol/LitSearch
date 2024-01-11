@@ -24,8 +24,8 @@ api_url = f'https://api.elsevier.com/content/search/scopus'
 
 headers =\
     {'Accept': 'application/json',
-   'X-ELS-APIKey': 'e06b8d66547acd3743143196a83a2d58',
-   'X-ELS-Insttoken': '6441054b64ac034be8481aaea2b77707'
+   'X-ELS-APIKey': {api_key},
+   'X-ELS-Insttoken': {api_insttoken}
     }
 
 keyword = input("Enter the keyword: ")
