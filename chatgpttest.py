@@ -23,7 +23,7 @@ def query_finalizer(operation, given_string, string_list):
 # Example usage:
 input_strings = ["a", "b", "c", "d"]
 
-and_result = query_finalizer("AND", "hurensohn", input_strings)
+and_result = query_finalizer("AND", "Tomate", input_strings)
 print("Result from AND operation:", and_result)
 
 #or_result = perform_string_operations("OR", "or", input_strings)
