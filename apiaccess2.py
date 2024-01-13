@@ -2,6 +2,7 @@ import requests
 from urllib.parse import quote
 import json
 from elsapy.elssearch import ElsSearch
+from elsapy.elsclient import ElsClient
 
 
 
@@ -16,9 +17,9 @@ print(api_insttoken)
 api_url = f'https://api.elsevier.com/content/search/scopus'
 # api_url_Textsearch = 'https://api.elsevier.com/content/search/scopus'
 
-#api_url_title = https://api.elsevier.com/content/serial/title
-#api_url_issn = https://api.elsevier.com/content/serial/title/issn/%7Bissn%7D
-#api_url_author = https://api.elsevier.com/content/author
+# api_url_title = https://api.elsevier.com/content/serial/title
+# api_url_issn = https://api.elsevier.com/content/serial/title/issn/%7Bissn%7D
+# api_url_author = https://api.elsevier.com/content/author
 # api_url_author_id= https://api.elsevier.com/content/ author/author_id/{author_id} AUTHROSEARCH API maybe
 # api_url_subject = https://api.elsevier.com/content/subject/scopus
 # api_ul_subject_scidir = https://api.elsevier.com/content/subject/scidir
@@ -32,7 +33,7 @@ headers =\
     }
 
 keyword = input("Enter the keyword: ")
-author = input("Enter the author's name: ")
+author =  input("Enter the author's name: ")
 
 processed_keyword = quote(keyword)
 processed_author = quote(author)
